@@ -1,0 +1,23 @@
+# AICHA Supabase Configuration
+
+# Project configuration
+project_id = "${SUPABASE_PROJECT_ID}"
+api_url = "${SUPABASE_URL}"
+anon_key = "your-anon-key"
+service_role_key = "your-service-role-key"
+
+# Database configuration
+[db]
+port = "${SUPABASE_DB_PORT}"
+major_version = 15
+
+# Auth configuration
+[auth]
+site_url = "${FRONTEND_URL}"
+additional_redirect_urls = ["${FRONTEND_URL}"]
+jwt_expiry = 3600
+enable_signup = true
+
+# Storage configuration
+[storage]
+file_size_limit = "50MB" 

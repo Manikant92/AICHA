@@ -1,0 +1,103 @@
+{
+  "roles": {
+    "admin": {
+      "name": "Administrator",
+      "description": "Full access to all resources",
+      "permissions": [
+        "read:patients",
+        "write:patients",
+        "read:medical_records",
+        "write:medical_records",
+        "run:ai_analysis",
+        "suggest:treatment",
+        "read:audit_logs",
+        "write:audit_logs"
+      ]
+    },
+    "doctor": {
+      "name": "Doctor",
+      "description": "Access to patient records and AI analysis",
+      "permissions": [
+        "read:patients",
+        "read:medical_records",
+        "write:medical_records",
+        "run:ai_analysis",
+        "suggest:treatment",
+        "read:audit_logs"
+      ]
+    },
+    "nurse": {
+      "name": "Nurse",
+      "description": "Access to patient records",
+      "permissions": [
+        "read:patients",
+        "read:medical_records",
+        "read:audit_logs"
+      ]
+    }
+  },
+  "resources": {
+    "patients": {
+      "name": "Patients",
+      "description": "Patient information and records",
+      "actions": {
+        "read": {
+          "name": "Read",
+          "description": "Read patient information"
+        },
+        "write": {
+          "name": "Write",
+          "description": "Write patient information"
+        }
+      }
+    },
+    "medical_records": {
+      "name": "Medical Records",
+      "description": "Patient medical history and records",
+      "actions": {
+        "read": {
+          "name": "Read",
+          "description": "Read medical records"
+        },
+        "write": {
+          "name": "Write",
+          "description": "Write medical records"
+        }
+      }
+    },
+    "ai_analysis": {
+      "name": "AI Analysis",
+      "description": "AI-powered medical analysis",
+      "actions": {
+        "run": {
+          "name": "Run",
+          "description": "Run AI analysis"
+        }
+      }
+    },
+    "treatment": {
+      "name": "Treatment",
+      "description": "Treatment suggestions and plans",
+      "actions": {
+        "suggest": {
+          "name": "Suggest",
+          "description": "Suggest treatment plans"
+        }
+      }
+    },
+    "audit_logs": {
+      "name": "Audit Logs",
+      "description": "System audit logs",
+      "actions": {
+        "read": {
+          "name": "Read",
+          "description": "Read audit logs"
+        },
+        "write": {
+          "name": "Write",
+          "description": "Write audit logs"
+        }
+      }
+    }
+  }
+} 
