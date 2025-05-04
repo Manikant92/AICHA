@@ -103,3 +103,4 @@ The frontend will be available at `http://localhost:3000` and the backend API at
 ---
 
 ## Blog
+https://dev.to/manikant92/aicha-ai-powered-healthcare-assistant-with-permitio-authorization-2kpo
